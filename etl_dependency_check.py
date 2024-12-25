@@ -46,7 +46,7 @@ def run_etl():
     print("Data loaded into the database successfully!")
 
 # Schedule the job to run every 2 minutes
-schedule.every(1).minutes.do(run_etl)
+schedule.every(2).minutes.do(run_etl)
 
 # Termination condition: Run for a specific number of iterations
 max_runs = 10  # Maximum number of runs
