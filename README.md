@@ -19,7 +19,7 @@ This project automates the process of getting raw data, changing it, and saving 
 
 **Pandas**: A Python library used for reading, manipulating, and transforming data, such as converting CSV files to a format that can be loaded into the database.
 
-**Task Scheduler (Windows)**: Used to schedule the ETL process to run automatically every 2 minutes, ensuring the workflow is triggered when new files are available.
+**Task Scheduler (Using Python)**: Used to schedule the ETL process to run automatically every 2 minutes, ensuring the workflow is triggered when new files are available.
 
 **os & time (Python libraries)**: Used to monitor file paths and wait until the necessary files are available before moving to the next stage in the ETL process.
 
