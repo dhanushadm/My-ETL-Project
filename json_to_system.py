@@ -4,7 +4,6 @@ url="https://fakestoreapi.com/products"
 response=requests.get(url)
 if response.status_code==200:
     data=response.json()
-    # path="C:\Users\dhanu\OneDrive\Documents\Custom Office Templates\htdocs\php"
     path = r"C:\Users\dhanu\OneDrive\Desktop\etl_project\raw_data\data.json"
     with open(path,"w") as json_file:
         json.dump(data,json_file)
